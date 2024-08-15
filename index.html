@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  </head>
+  <body>
+    <div id="upper_left"></div>
+    <div id="upper_centre"></div>
+	<div id="upper_right"></div>
+	<div id="lower_left"></div>
+	<div id="lower_right"></div>
+    
+    <div class="glitch">
+      <p>
+        Do you want to play with me ?</p>.
+      </p>
+      </div>
+    <div class="container">
+      <div>
+        <!-- <h1 class="header_text">Do you want to play with me ?</h1> -->
+      </div>
+      <div class="gif_container">
+        <img
+          src="smile.gif"
+          alt="Cute animated illustration"
+        />
+      </div>
+     
+      <div class="buttons">
+        <button class="btn" id="yesButton"><a href="Arthropoda-main/index.html">Yes</a></button>
+        <button
+          class="btn"
+          id="noButton"
+          onmouseover="moveButton()"
+          onclick="moveButton()"
+        >
+          No
+        </button>
+
+        <script>
+          function nextPage() {
+            window.location.href = "Arthropoda-main\index.html";
+          }
+
+          function moveButton() {
+            var x =
+              Math.random() *
+              (window.innerWidth -
+                document.getElementById("noButton").offsetWidth);
+            var y =
+              Math.random() *
+              (window.innerHeight -
+                document.getElementById("noButton").offsetHeight);
+            document.getElementById("noButton").style.left = `${x}px`;
+            document.getElementById("noButton").style.top = `${y}px`;
+          }
+        </script>
+      </div>
+    </div>
+  </body>
+</html>

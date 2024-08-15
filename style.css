@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css?family=Kirang+Haerang');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  background: linear-gradient(rgb(0, 249, 236), rgb(71, 150, 229));
+}
+#upper_left {
+  z-index: 999;
+  width: 200px; height: 200px;
+  position: absolute;
+  top: 0; left: 0;
+  background-image: url("images/COLLEGE_LOGO.png");
+  background-repeat: no-repeat;
+
+  }
+  
+  #upper_right {
+    z-index: 999;
+  width: 330px; height: 330px;
+  position: absolute;
+  top: 0;
+  background-image: url("images/ggj00-roundlogo-900x900.png");
+  right: 0%;
+
+  background-repeat: no-repeat;
+
+  }
+  
+  #lower_left {
+    z-index: 999;
+  width: 300px; height: 300px;
+  position: absolute;
+  bottom: 0%; left: 0;
+  background-image: url("images/WhatsApp Image.png");
+  background-repeat: no-repeat;
+  
+  }
+  #upper_centre{
+    z-index: 999;
+  width:757px; height: 330px;
+  position: absolute;
+  top: 0;
+  background-image: url("images/Lavazza-Logo.svg.png");
+  right: 30%;
+
+  background-repeat: no-repeat;
+  }
+  
+  #lower_right {
+    z-index: 999;
+  width: 300px; height: 300px;
+  bottom: 0%;
+  right: 0%;
+  position: absolute;
+  background-image: url("images/ImskLogo-zoom.png");
+  background-repeat: no-repeat;
+  }
+
+#noButton {
+  position: absolute;
+  margin-left: 150px;
+  transition: 0.5s;
+  margin-top: 30px;
+}
+
+#yesButton {
+  position: absolute;
+  margin-right: 150px;
+  margin-top: 30px;
+}
+
+.header_text {
+  font-family: "Nunito";
+  font-size: 50px;
+  font-weight: bold;
+
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.text {
+  font-family: "Nunito";
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.btn {
+  background-color: #017cff;
+  color: white;
+  font-weight: 600;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 3px 3px black;
+}
+
+.btn:hover {
+  background-color: #ffffff;
+  color: #017cff;
+}
+
+.container{
+  z-index: 999;
+}
+.gif_container {
+  /* z-index: 999; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+p {
+  color: red;
+  margin-left: 50%;
+}
+p a {
+  /* color: rgb(255, 255, 255); */
+  font-size: 20px;
+  font-weight: 600;
+  opacity: 0;
+}
+
+
+.glitch {
+  /* position:relative; */
+  height:100vh;
+  /* width: 100vw; */
+  background-image:url('https://img.freepik.com/free-photo/world-smile-day-emojis-arrangement_23-2149024492.jpg');
+  /* background-size: contain; */
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+}
+.glitch:before {
+  content:'';
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-image:url('https://img.freepik.com/free-photo/world-smile-day-emojis-arrangement_23-2149024492.jpg');
+  background-position: 7px 0;
+  /* opacity: 0.7; */
+  /* background-repeat: no-repeat; */
+}
+.glitch:hover:before{
+  animation: animate .5s infinite;
+}
+.glitch>p {
+  margin : 0;
+  font-size:8rem;
+  color:rgb(0, 0, 0);
+  position:absolute;
+  top:33%;
+  left:50%;
+  transform: translate(-50%);
+  font-family: 'Kirang Haerang', cursive;
+  width: max-content;
+}
+@keyframes animate{
+  0% {
+    background-position: 0 0;
+    filter: hue-rotate(0deg);
+  }
+  10% {
+    background-position: 4px 0;
+  }
+  20% {
+    background-position: -4px 0;
+  }
+  30% {
+    background-position: 12px 0;
+  }
+  40% {
+    background-position: -16px 0;
+  }
+  50% {
+    background-position: -24px 0;
+  }
+  50% {
+    background-position: -52px 0;
+  }
+  60% {
+    background-position: 0 22px;
+  }
+  70% {
+    background-position: -40px -10px;
+  }
+   80% {
+    background-position: -24px 0;
+  }
+    90% {
+    background-position: -24px 0;
+  }
+   100% {
+    background-position:  0 0;
+     filter: hue-rotate(360deg);
+  }
+}
